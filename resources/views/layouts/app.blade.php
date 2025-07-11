@@ -7,9 +7,10 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">Dashboard</a>
+            <a class="navbar-brand" href="{{ url('/learner-progress') }}"><i class="bi bi-house"></i>
+            </a>
         </div>
     </nav>
 

@@ -1,6 +1,14 @@
-import 'bootstrap';
-import 'datatables.net-bs5'; // Uses Bootstrap 5 styling
-import $ from 'jquery';
+import './bootstrap';
+import 'laravel-datatables-vite';
 
-window.$ = $;
-window.jQuery = $;
+// resources/js/app.js (or your main JS entry file)
+import jQuery from 'jquery';
+
+// Expose jQuery globally (optional, but often needed for older plugins or inline scripts)
+window.$ = jQuery;
+window.jQuery = jQuery;
+
+// Import all of Bootstrap's JS
+// import * as bootstrap from 'bootstrap'
+
+
