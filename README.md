@@ -16,7 +16,6 @@ A simple Laravel 12 web app that displays learner enrollment progress across cou
 - Filter learners by course name
 - Sort learners by average progress percentage
 - Progress bars with contextual colors (danger/warning/info/success)
-- Learner rankings (highest to lowest progress)
 - Fully tested with Cypress end-to-end coverage
 
 ---
@@ -99,30 +98,3 @@ npx cypress run
 
 Cypress version: `12.17.4` (pinned for compatibility)
 
----
-
-## 📂 Project Structure
-
-```
-app/Models/           # Learner, Course, Enrolment
-app/Http/Controllers/ # LearnerProgressController
-routes/web.php        # Routes
-resources/views/      # Blade views
-public/screenshot.png # UI preview
-cypress/e2e/          # Cypress tests
-```
-
----
-
-## 🔀 Branching Strategy
-
-- `setup`: Initial Laravel + provided seeders/models
-- `dev`: Ongoing development
-- `main`: Production-ready
-- `feature/cypress-tests`: Cypress test coverage
-
----
-
-## 📄 License
-
-MIT — see [`LICENSE`](LICENSE) _(if included)_.
